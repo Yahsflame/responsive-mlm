@@ -29,6 +29,8 @@ $(function(){
   });
 
 	menuBtn.click(function(){
+		$(".menu-button").css("pointer-events", "none");
+		setTimeout('$(".menu-button").css("pointer-events", "all")', 500);
 		if($('.menu-button span').hasClass("rotateOff")){
 			$('.menu-button span').removeClass("rotateOff");
 			$('.menu-button span').addClass("rotateOn");
