@@ -140,4 +140,10 @@ span:hover {
 		min-width:auto;
 		display: none;
 	}
+
+	span {
+	  transform-origin: center;
+		-moz-transform-origin: center;
+		-webkit-transform-origin: center;
+	}
 }
