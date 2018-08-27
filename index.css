@@ -77,7 +77,7 @@ ul {
 
 /* Menu Button Styles */
 .menu-button {
-  position: fixed;
+  position: absolute;
   cursor: pointer;
   top: 20px;
   right: 20px;
@@ -102,7 +102,6 @@ span {
 	transition: transform .3s linear;
   transform-origin: 49% 55%;
 	-moz-transform-origin: 50% 50%;
-	-webkit-transform-origin: 50% 55%;
 }
 
 span:hover {
@@ -135,9 +134,10 @@ span:hover {
 }
 
 /* Media Queries for responsive design */
-@media screen and (max-width: 450px){
+@media screen and (max-width: 768px){
 	.menu-wrapper {
 		width:100%;
 		min-width:auto;
+		display: none;
 	}
 }

@@ -37,15 +37,19 @@ $(function(){
 		  }, 750, function() {
 		    // Animation complete.
 		  });
+			$('.menu-wrapper').css('display', 'block');
 			parentLi.removeClass('open-submenu');
 		} else {
 			$('.menu-button span').removeClass("rotateOn");
 			$('.menu-button span').addClass("rotateOff");
 		  $( ".menu-wrapper" ).animate({
-		    right: "-1000"
-		  }, 750, function() {
+		    right: "-500"
+		  }, 500, function() {
 		    // Animation complete.
 		  });
+			setTimeout( function(){
+				$('.menu-wrapper').css('display', 'none');
+			}, 500);
 		}
 	});
 
@@ -61,10 +65,13 @@ $(document).click(function(e) {
 					$('.menu-button span').removeClass("rotateOn");
 					$('.menu-button span').addClass("rotateOff");
 					$( ".menu-wrapper" ).animate({
-						right: "-1000"
-					}, 750, function() {
+						right: "-500"
+					}, 500, function() {
 						// Animation complete.
 					});
+					setTimeout( function(){
+						$('.menu-wrapper').css('display', 'none');
+					}, 500);
         }
     }
 });
