@@ -38,6 +38,7 @@ $(function(){
 		    // Animation complete.
 		  });
 			$('.menu-wrapper').css('display', 'block');
+			$('.open-subsubmenu').removeClass('open-subsubmenu');
 			parentLi.removeClass('open-submenu');
 		} else {
 			$('.menu-button span').removeClass("rotateOn");
@@ -50,6 +51,8 @@ $(function(){
 			setTimeout( function(){
 				$('.menu-wrapper').css('display', 'none');
 			}, 500);
+			$('.open-subsubmenu').removeClass('open-subsubmenu');
+			parentLi.removeClass('open-submenu');
 		}
 	});
 
